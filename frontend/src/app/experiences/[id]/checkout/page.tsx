@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createBooking, validatePromoCode } from "@/store/slices/bookingSlice";
+import { RootState } from "@/store/store";
 
 export default function CheckoutPage() {
   const searchParams = useSearchParams();
@@ -13,8 +14,7 @@ export default function CheckoutPage() {
   const router = useRouter();
   const dispatch = useDispatch();
 
-  const { loading, error } = useSelector((state) => state.booking);
-
+  const { loading, error } = useSelector((state: RootState) => state.booking);
   const id = params?.id;
   const date = searchParams?.get("date") || "Dec 1";
   const time = searchParams?.get("time") || "07:00-11:00";

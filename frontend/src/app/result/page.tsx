@@ -5,7 +5,7 @@ import Header from "@/components/Navbar";
 import { useSelector, useDispatch } from "react-redux";
 import type { RootState } from "@/store/store";
 import { useEffect } from "react";
-import { resetBookingState } from "@/store/slices/bookingSlice";
+// import { resetBookingState } from "@/store/slices/bookingSlice";
 
 export default function BookingResult() {
   const dispatch = useDispatch();
@@ -18,11 +18,11 @@ export default function BookingResult() {
     localStorage.removeItem('userDetails');
     
     // Reset booking state when leaving the page
-    return () => {
-      setTimeout(() => {
-        dispatch(resetBookingState());
-      }, 5000); 
-    };
+    // return () => {
+    //   setTimeout(() => {
+    //     dispatch(resetBookingState());
+    //   }, 5000); 
+    // };
   }, [dispatch]);
 
   if (error) {
