@@ -167,7 +167,7 @@ export default function BookingResult() {
 
           {confirmation.message && (
             <p className="text-green-600 text-sm mb-4 bg-green-50 px-3 py-2 rounded">
-              ✅ {confirmation.message}
+               {confirmation.message}
             </p>
           )}
 

@@ -34,6 +34,7 @@ type BookingConfirmation = {
     quantity: number;
     totalAmount: number;
   };
+  message?: string;
 };
 
 type State = {
