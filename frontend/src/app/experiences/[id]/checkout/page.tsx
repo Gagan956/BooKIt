@@ -211,7 +211,7 @@ export default function CheckoutPage() {
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-xs text-gray-600 mb-4">
                 Apply{" "}
-                <span className="text-green-600 font-semibold">'SAVE10'</span> for instant
+                <span className="text-green-600 font-semibold">'SAVE10&#39;</span> for instant
                 10% Discount
               </p>
               <div className="flex items-center gap-3">
