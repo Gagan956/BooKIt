@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL || 'https://bookit-5s62.onrender.com/api',
+  baseURL:'https://bookit-5s62.onrender.com/api',
   headers: {
     'Content-Type': 'application/json',
   },
