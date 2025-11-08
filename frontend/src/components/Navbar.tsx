@@ -18,7 +18,7 @@ export default function Header() {
     e.preventDefault();
     if (query.trim()) {
       dispatch(setSearchQuery(query));
-      dispatch(fetchExperiences(query)); // ✅ Trigger API call
+      dispatch(fetchExperiences(query)); 
     }
   };
 
@@ -38,7 +38,7 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 h-full">
         <div className="flex items-center h-full">
-          {/* ✅ Logo */}
+          {/*  Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <div className="relative w-[90px] h-[90px]">
               <Image
@@ -55,7 +55,7 @@ export default function Header() {
           {/* Spacer */}
           <div className="flex-1" />
 
-          {/* ✅ Search Bar */}
+          {/*  Search Bar */}
           <form
             onSubmit={handleSearch}
             className="relative w-2/5 max-w-[560px] mr-6"
@@ -76,7 +76,7 @@ export default function Header() {
             </button>
           </form>
 
-          {/* Space for right icons (optional) */}
+          {/* Space for right icons */}
           <div className="w-6" />
         </div>
       </div>

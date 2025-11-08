@@ -16,7 +16,6 @@ type Experience = {
 export default function ExperienceCard({ exp }: { exp: Experience }) {
   const [imageError, setImageError] = useState(false);
 
-  // ✅ Better image URL handling
   const getImageUrl = (imagePath: string) => {
     if (imagePath.startsWith('http')) return imagePath;
     if (imagePath.startsWith('/')) return imagePath;
@@ -39,7 +38,6 @@ export default function ExperienceCard({ exp }: { exp: Experience }) {
             onError={() => setImageError(true)}
           />
         ) : (
-          // ✅ Fallback UI if image fails to load
           <div className="w-full h-full bg-gray-200 flex items-center justify-center">
             <span className="text-gray-500 text-sm">Image not available</span>
           </div>
