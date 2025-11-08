@@ -11,7 +11,7 @@ const app = express();
 app.use(helmet());
 app.use(
   cors({
-    origin:  process.env.FRONTEND_URL, 
+    origin:  process.env.FRONTEND_URL  || "https://book-it-pearl-two.vercel.app", 
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true, 

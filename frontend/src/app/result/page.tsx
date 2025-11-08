@@ -12,8 +12,8 @@ export default function BookingResult() {
   const { confirmation, error } = useSelector((s: RootState) => s.booking);
   
   useEffect(() => {
-    console.log('📊 Booking result page - Confirmation:', confirmation);
-    console.log('📊 Booking result page - Error:', error);
+    console.log(' Booking result page - Confirmation:', confirmation);
+    console.log('Booking result page - Error:', error);
     
     localStorage.removeItem('userDetails');
     
